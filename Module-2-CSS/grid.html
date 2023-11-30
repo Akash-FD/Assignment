@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+ 
+    }
+    body{
+      padding: 2.1%;
+      background-color: black;
+    }
+    h1{
+      color: white;
+      font-size: 55px;
+      text-align: center;
+    }
+    .main{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .navbar{
+      background-color: black;
+      line-height: 45px;
+      text-align: right;
+    }
+
+    .navbar a{
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+    .navbar a:hover{
+      color: red;
+    }
+    .navbar h2{
+      color: aliceblue;
+      text-align: right;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-template-rows: repeat(4,1fr);
+      gap: 1.2%;
+    }
+    img{
+      width: 100%;
+      height: 270px;
+    }
+    .gtr{
+      grid-column: 1/5;
+    }
+    .charger{
+      grid-column: 5/7;
+    }
+    .bugati{
+      grid-area: 2/1/3/3;
+    }
+    .maclaren{
+      grid-area: 2/3/3/6;
+    }
+    .kawasaki{
+      grid-area: 2/6/3/7;
+    }
+    .lembo{
+      grid-area: 3/1/5/4;
+    }
+    .rr{
+      grid-area: 3/4/4/7;
+    }
+    .bently{
+      grid-area: 4/1/5/3;
+    }
+    .rang{
+      grid-area: 4/3/5/5;
+    }
+    .defender{
+      grid-area: 4/5/5/7;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+  <h1>CARS GALLARY</h1>
+  <div class="main">
+
+    <div class="navbar">
+      <h2>SHUTTER</h2>
+      
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PHOTOS</a></li>
+      <li><a href="#">BIO</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+
+      
+      
+    </div>
+    
+    <div class="grid">
+      
+      
+      <img src="https://images.carandbike.com/car-images/big/nissan/gt-r/nissan-gt-r.jpg?v=25" alt="" class="gtr">
+      
+      <img src="https://www.classic-trader.com/de/magazin/wp-content/uploads/sites/4/2021/04/Dodg_Char_RRA01-1200x790.jpg" alt="" class="charger">
+      
+    <img src="https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-super-sport-300-front-1568380522.jpg" alt="" class="bugati">
+    
+    <img src="https://c4.wallpaperflare.com/wallpaper/79/286/391/maclaren-supercar-performance-car-maclaren-p1-wallpaper-preview.jpg" alt="" class="maclaren">
+    
+    <img src="https://e0.pxfuel.com/wallpapers/92/1021/desktop-wallpaper-ninja-bike-metallic-black-bike.jpg" alt="" class="kawasaki">
+    
+    <img src="https://c4.wallpaperflare.com/wallpaper/279/776/836/lamborghini-sc18-supercar-2018-cars-4k-wallpaper-preview.jpg" alt="" class="lembo">
+    
+    <img src="https://www.livemint.com/lm-img/img/2023/10/13/600x338/rollys_royce_1697192695857_1697193035340.png" alt="" class="rr">
+    
+    <img src="https://www.bentleymedia.com/attachment/5ec3be48-affa-4d47-ae72-7c45a34e819e" alt="" class="bently">
+    
+    <img src="https://s1.cdn.autoevolution.com/images/news/forbidden-fruit-635-ps-2024-range-rover-sport-sv-kicks-off-at-234k-in-australia-215833_1.jpg" alt="" class="rang">
+    
+    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202307/land-rover-defender-282247-16x9.jpg?VersionId=Gnlf4WeZYWCvsXm0_Nj.61n50Iu8Uznw&size=690:388" alt="" class="defender">
+    
+    
+  </div>
+  
+  
+</div>
+  
+  
+</body>
+</html>
