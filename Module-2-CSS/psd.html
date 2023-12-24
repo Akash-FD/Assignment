@@ -16,7 +16,8 @@
         }
 
         body{
-            background-color: gainsboro;
+            /* background-color: gainsboro; */
+            background-color: white;
         }
         
 
@@ -78,7 +79,7 @@
             width: 70%;
             text-align: center;
             margin: 5% 0%;
-            line-height: 70px;
+            line-height: 60px;
             font-size: 20px;
 
 
@@ -106,7 +107,8 @@
             background-color: greenyellow;
             width: 200px;
             margin: 0 auto;
-            border-radius: 25px;
+            border-radius: 250px;
+            
 
         }
         .grap1 img{
@@ -142,7 +144,7 @@
         }
 
         .time {
-            background-color:slategray;
+            /* background-color:slategray; */
             display: flex;
             flex-wrap: wrap;
             width: 90%;
@@ -296,9 +298,10 @@
            
             display: flex;
             justify-content: space-between;
-            padding: 10% 0;
+            padding: 7% 0;
             background-color: rgb(27, 27, 65);
             color: aliceblue;
+            margin-top: 40px;
         }
         .flex>div{
             margin: 0 100px;
@@ -326,7 +329,7 @@
             }
 
             .grap1 img{
-                width: 400px;
+                width: 380px;
             }
 
             .timeline img{
@@ -354,7 +357,7 @@
             }
 
             .grap2 {
-                width: 430px;
+                width: 400px;
             }
 
             .work{
@@ -380,6 +383,17 @@
                 display: flex;
                 flex-direction: column;
                 
+            }
+
+            @media (max-width:400px) {
+
+                .grap1 img{
+                width: 310px;
+            }
+                .grap2 {
+                width: 320px;
+            }
+
             }
           
 
