@@ -1,0 +1,51 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+.heading {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    background-color: cadetblue;
+}
+
+.add {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    line-height: 100px;
+}
+
+form input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+}
