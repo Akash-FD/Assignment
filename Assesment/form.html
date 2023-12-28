@@ -93,13 +93,13 @@
 
         <div class="main">
 
-            <form onsubmit="data()" action="abc.html">
+            <form onsubmit="return data()" action="abc.html">
                 <input type="text" placeholder="Name:" id="input1">
                 <input type="text" name="" id="input2" placeholder="Company:"><br>
                 <input type="email"  id="input3" placeholder="Email:">
                 <input type="text" name="" id="input4" placeholder="Contact Number:"><br>
                 <input type="text" id="input5" placeholder="Massege"><br>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" >
             </form>
             <div class="map">
                 <iframe
@@ -123,16 +123,21 @@
         if (a=="" || b=="" || c=="" || d=="" || e=="") {
             
             alert("All fild are mendotory");
+            return false;
             
         }else if(d.length >10 || d.length <10){
-          
+            
             alert('Contact number shoud be 10 digit');
-
+            return false;
+            
         }
         else if(isNaN(d)){
-          
+            
             alert('Contact number must in Number only');
+            return false;
 
+        }else{
+            true;
         }
     }
 
