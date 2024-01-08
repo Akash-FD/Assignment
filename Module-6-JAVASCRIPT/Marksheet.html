@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        .box{
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid black;
+            padding: 30px;
+            
+        }
+        input{
+            float: right;
+        }
+        button{
+            padding: 5px 8px;
+        }
+
+        </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <h1>MARKSHEET FOR INFORMATION TECHNOLOGY</h1><br>   
+
+            <h2>ENTER MARKS</h2><br>
+
+          
+            1. C Language : <input type="number" id="c"><br><br>
+            2. C++ Language : <input type="number" id="c++"><br><br>
+            3. Database : <input type="number" id="data"><br><br>
+            4. HTML : <input type="number" id="html"><br><br>
+            5. CSS : <input type="number" id="css"><br><br>
+            6. Javascript: <input type="number" id="javascript"><br><br>
+            7. Core Java : <input type="number" id="java"><br><br>
+
+            <button onclick="percentage()">Result</button><br><br>
+
+            <p>TOTAL IS : <b id="total"></b> / 350</p><br>
+
+            <p>PERCENATGE IS : <b id="per"></b> %</p>
+          
+        </div>
+    </section>
+
+    <script>
+        
+        
+        
+        
+        function percentage(){
+            let a = parseInt(document.getElementById("c").value)
+            let b = parseInt(document.getElementById("c++").value)
+            let c = parseInt(document.getElementById("data").value)
+            let d = parseInt(document.getElementById("html").value)
+            let e = parseInt(document.getElementById("css").value)
+            let f = parseInt(document.getElementById("javascript").value)
+            let g = parseInt(document.getElementById("java").value);
+
+            let sum = a + b + c + d + e + f + g;
+
+            if(sum<=350 && sum>=0 && a<=50 && b<=50 && c<=50 && d<=50 && e<=50 && f<=50 && g<=50){
+          
+            document.getElementById("total").innerText = sum
+
+            document.getElementById("per").innerHTML = sum*100/350
+        } else{
+            alert("incorrect! please enter valid data")
+            
+        }
+    }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculater</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        body {
+            background-color: rgb(31, 42, 36);
+        }
+
+        input {
+            width: 120px;
+            padding: 10px;
+            color: aliceblue;
+            background-color: black;
+
+        }
+
+
+        #result {
+
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+            margin: 0% auto;
+            margin-top: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .pmsd {
+            line-height: 40px;
+        }
+
+        .pmsd button {
+            width: 100px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 8px;
+            padding: 5px 20px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        .main {
+            background-color: brown;
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px 10px;
+        }
+
+        .display {
+            background-image: url("../../Assignment/Module-1-HTML/image/coder.jpg");
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            width: 300px;
+            margin: 0 auto;
+
+            margin-top: 100px;
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="display">
+
+        <div class="first">
+            First :
+            <input type="number" id="first">
+        </div><br><br>
+             Second:
+            <input type="number" id="second">
+        </div><br><br>
+    </div>
+
+    <div class="main">
+
+
+        <div class="pmsd">
+
+
+            <div>
+                <button onclick="add()">+</button>
+                <button onclick="mul()">x</button>
+            </div>
+
+
+
+            <div>
+                <button onclick="sub()">-</button>
+                <button onclick="div()">/</button>
+            </div>
+
+
+
+            <div id="result">result</div>
+        </div>
+    </div>
+
+    <script>
+        function add() {
+
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+
+            let add = a + b;
+            document.getElementById("result").innerText = add;
+
+            console.log(a + b);
+        }
+
+        function mul() {
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+
+            let mul = a * b;
+            document.getElementById("result").innerText = mul;
+
+            console.log(a * b);
+        }
+
+
+        function sub() {
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+
+            let sub = a - b;
+            document.getElementById("result").innerText = sub;
+
+            console.log(a - b);
+        }
+
+        function div() {
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+
+            let div = a / b;
+            document.getElementById("result").innerText = div;
+
+            console.log(a / b);
+        }
+    </script>
+
+</body>
+
+</html>
