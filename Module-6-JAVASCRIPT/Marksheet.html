@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        *{
+        * {
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
         }
-        
-        .box{
-            width: 500px;
+
+        .box {
+            width: 600px;
             margin: 0 auto;
             border: 2px solid black;
             padding: 30px;
-            
-        }
-        input{
-            float: right;
-        }
-        button{
-            padding: 5px 8px;
+            font-size: 20px;
+
         }
 
-        </style>
+        input {
+            float: right;
+        }
+
+        button {
+            padding: 5px 8px;
+            background-color: royalblue;
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        p {
+            
+            height: 30px;
+        }
+    </style>
 </head>
+
 <body>
     <section>
         <div class="box">
-            <h1>MARKSHEET FOR INFORMATION TECHNOLOGY</h1><br>   
+            <h1>MARKSHEET FOR INFORMATION TECHNOLOGY</h1><br>
 
             <h2>ENTER MARKS</h2><br>
 
-          
+
             1. C Language : <input type="number" id="c"><br><br>
             2. C++ Language : <input type="number" id="c++"><br><br>
             3. Database : <input type="number" id="data"><br><br>
@@ -44,21 +55,23 @@
             6. Javascript: <input type="number" id="javascript"><br><br>
             7. Core Java : <input type="number" id="java"><br><br>
 
-            <button onclick="percentage()">Result</button><br><br>
+            <button onclick="percentage()">Check Result</button><br><br>
 
             <p>TOTAL IS : <b id="total"></b> / 350</p><br>
 
-            <p>PERCENATGE IS : <b id="per"></b> %</p>
-          
+            <p>PERCENATGE IS : <b id="per"></b> %</p><br><br>
+
+            <p id="Result"></p>
+
         </div>
     </section>
 
     <script>
-        
-        
-        
-        
-        function percentage(){
+
+
+
+
+        function percentage() {
             let a = parseInt(document.getElementById("c").value)
             let b = parseInt(document.getElementById("c++").value)
             let c = parseInt(document.getElementById("data").value)
@@ -69,18 +82,31 @@
 
             let sum = a + b + c + d + e + f + g;
 
-            if(sum<=350 && sum>=0 && a<=50 && b<=50 && c<=50 && d<=50 && e<=50 && f<=50 && g<=50){
-          
-            document.getElementById("total").innerText = sum
+            // let sorry = document.write("Sorry! you are FAIL")
 
-            document.getElementById("per").innerHTML = sum*100/350
-        } else{
-            alert("incorrect! please enter valid data")
-            
+            if (sum <= 350 && sum >= 116 &&  a <= 50 && b <= 50 && c <= 50 && d <= 50 && e <= 50 && f <= 50 && g <= 50 && a >= 18 && b >= 18 && c >= 18 && d >= 18 && e >= 18 && f >= 18 && g >= 18) {
+
+                document.getElementById("total").innerText = sum
+                document.getElementById("per").innerText = sum * 100 / 350
+                let clr = document.getElementById("Result").innerText = "Congratulation.. You are PASS" 
+                // clr.style.color = 'green';
+                
+            } else if ( a < 18 || b < 18 || c < 18 || d < 18 || e < 18 || f < 18 || g < 18) {
+                
+                document.getElementById("total").innerText = sum
+                document.getElementById("per").innerText = sum * 100 / 350
+                document.getElementById("Result").innerText = "Sorry! you are FAIL"
+                // clr.style.color = 'red';
+
+            } else {
+
+                alert("Incorrect ! please enter valid data")
+
+            }
         }
-    }
 
 
     </script>
 </body>
+
 </html>
