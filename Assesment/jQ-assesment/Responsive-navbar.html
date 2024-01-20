@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        *{
+        * {
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
@@ -16,8 +17,13 @@
             list-style: none;
 
         }
+
+        body {
+            background-color: rgb(199, 178, 134);
+        }
+
         div {
-          
+
             /* border: 2px solid red; */
             list-style: none;
             max-width: 900px;
@@ -31,82 +37,94 @@
             display: none;
         }
 
-        nav{
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: darksalmon;
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             width: 700px;
             /* justify-content: space-around; */
             list-style: none;
             color: aliceblue;
             font-size: 25px;
-            
+
             justify-content: right;
-            
+
         }
-        nav ul li{
+
+        nav ul li {
             margin: 15px;
             display: flex;
         }
-        
 
-        nav img{
+
+        nav img {
             width: 70px;
             border-radius: 50%;
         }
-        #bar{
+
+        #bar {
             color: aliceblue;
             display: none;
         }
 
-        li:hover{
+        li:hover {
             font-size: 28px;
         }
 
-        @media (max-width : 800px) {
+        @media (min-width : 800px) {
 
-            nav ul{
+            #list li{
                 display: none;
-            }
-            
-            nav{
-                
-                justify-content: space-between;
-                padding: 40px;
+        
                 
             }
-            #bar{
-                display: block;
-                
-            }
-            
         }
 
+            @media (max-width : 800px) {
 
+                nav ul {
+                    display: none;
+                }
+
+                nav {
+
+                    justify-content: space-between;
+                    padding: 40px;
+
+                }
+
+                #bar {
+                    display: block;
+
+                }
+
+            }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
 
             <img src="../../../Website-clone/wesite/img/foodweb/founder1.png" alt="">
-            
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Contact</li>
-                </ul>
 
-                <i class="fa-solid fa-bars" id="bar"></i>
-            
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="bar"></i>
+
         </nav>
-        
+
         <div id="list">
             <ul>
                 <li>Home</li>
@@ -114,26 +132,15 @@
                 <li>Project</li>
                 <li>Contact</li>
             </ul>
-        
-        </div>
-            
 
-        
+        </div>
+
+
+
     </header>
 </body>
 
 <script src="../../../JQurey/JQ/JQuery.js"></script>
-<script>
+<script src="nav.js"></script>
 
-    $(document).ready(function () {
-        
-        $("#bar").click(function(){
-            
-            $("#list").slideToggle()
-            $("#list").css('display','inlineBlock')
-           
-        })
-        
-    })
-    </script>
-    </html>
+</html>
