@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+
+        }
+
+        body {
+            background-color: darkslategray;
+           
+        }
+        .container{
+            width: 60%;
+            height: 100vh;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            
+        }
+
+        button {
+            width: 70px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(207, 140, 6);
+            color: blanchedalmond;
+
+        }
+        input{
+            font-size: 25px;
+            color: black;
+            margin: 0 auto;
+            margin-top:50px ;
+        }
+        #todolist{
+            width: 298px;
+            padding: 5px;
+            margin: 0 auto;
+            margin-left: 274px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+           
+        }
+        #todolist p{
+            /* border: 1px solid black; */
+            padding: 2px;
+            margin: 2px 0;
+        }
+        #todolist p::before{
+            content: "- ";
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <input type="text" name="" id="inputtext">
+        <button id="btn" onclick="addtext()">Add</button>
+        <div id="todolist"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
