@@ -1,49 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        *{
-            margin: 0 ;
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
+
         }
 
-        body{
+        body {
             width: 100%;
             height: 100%;
+            background-color: rgb(26, 26, 26);
         }
 
-        .main{
-            width: 60%;
-            height: 500px;
-            margin: 0 auto;
-            position: relative;
+        .main {
+            width: 900px;
+            height: auto;
             display: flex;
+            overflow-x: scroll;
         }
 
-        .main img{
+        .main div {
             width: 100%;
-            height: 500px;
-            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 8px;
+            flex: none;
+        }
+
+        .main div img {
+
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: fill;
+            filter: grayscale(100);
+            cursor: pointer;
+            transition: transform 0.6s;
+
+
+        }
+
+        .main::-webkit-scrollbar {
+            display: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin: 12% 15%;
+        }
+
+        .header h1 {
+            font-size: 80px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 42, 0);
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 100%;
+        }
+
+        
+
+        .main div img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.2);
+            z-index: 2;
+
+
+
         }
     </style>
 </head>
+
 <body>
-    <div class="main">
-        <img src="../../Javascript/img/ensepsen (1).jpg" alt="">
-        <img src="../../Javascript/img/ensepsen (2).jpg" alt="">
-        <img src="../../Javascript/img/ensepsen (3).jpg" alt="">
-        <img src="../../Javascript/img/ensepsen (4).jpg" alt="">
+    <div class="header">
+        <h1 id="backbtn">
+            <</h1>
+
+                <div class="main">
+                    <div class="gallary">
+
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (1).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
+                    </div>
+                        
+                    <div class="gallary">
+                        
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen(5).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (1).jpg" alt="">
+                        
+                    </div>
+                    <div class="gallary">
+                        
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
+                      
+                    </div>
+                </div>
+                <h1 id="nextbtn">></h1>
+
     </div>
 
     <script>
-        let slider = document.getElementsByTagName("img")
+
+        let slider = document.querySelector(".main");
+        let backbtn = document.querySelector("#backbtn");
+        let nextbtn = document.querySelector("#nextbtn");
+
+
+        nextbtn.addEventListener("click", () => {
+            slider.style.scrollBehavior = "smooth";
+            slider.scrollLeft += 300;
+        });
+
+        backbtn.addEventListener("click", () => {
+            slider.scrollLeft -= 300;
+            slider.style.scrollBehavior = "smooth";
+        });
+
     </script>
-    
+
 </body>
+
 </html>

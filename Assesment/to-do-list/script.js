@@ -7,17 +7,17 @@ function addtext() {
         let b = document.createElement("p");     // create paragrap
         let c = document.createTextNode(a);      // create text by user input 
 
-        let d = 0;
+       
 
     // give condition
 
-        if (d == 0) {
+        if (a!="") {
             b.appendChild(c);       // create paragrap and append text in paragrap
 
             document.getElementById("todolist").appendChild(b); 
             document.getElementById("todolist").style.backgroundColor="white"
 
-            d = 1
+            
         } else {
             alert("input data is must")
         }
