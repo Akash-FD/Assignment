@@ -49,7 +49,7 @@
             height: 80px;
             background-color: rgb(237, 78, 25);
         }
-
+        
         nav ul {
             display: flex;
             width: 700px;
@@ -59,16 +59,16 @@
             font-size: 25px;
 
             justify-content: right;
-
+            
         }
 
-
-
+        
+        
         nav ul li {
             margin: 15px;
             display: flex;
         }
-
+        
 
         nav h1 {
           font-size: 25px;
@@ -80,7 +80,7 @@
             color: aliceblue;
             display: none;
         }
-
+        
         li:hover {
             color: red;
         }
@@ -103,9 +103,11 @@
         .myimg{
             width: 30%;
             height: 500px;
-            border-radius: 50%;
+            border-radius: 60%;
             overflow: hidden;
-            box-shadow:rgb(220, 140, 0) 1px  10px 10px;
+            background-color: rgb(237, 78, 25);
+            box-shadow:rgb(237, 78, 25) 1px  10px 10px;
+            transition: transform 0.5s;
             
         }
         
@@ -116,24 +118,50 @@
 
         .myimg:hover{
             /* outline: 2px solid orangered; */
-            box-shadow:rgb(224, 129, 5) 1px  10px 50px;
+            box-shadow:rgb(14, 22, 63) 1px  10px 50px;
+            transform: scale(1.05);
             
             
         }
-
-
+        .social a{
+            margin-inline: 10px;
+            color: aliceblue;
+        }
+        .section1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .aboutme{
+            width: 50%;
+            font-size: 25px;
+        }
+        .myimg2{
+            width: 30%;
+            height: 100%;
+            overflow: hidden;
+            box-shadow:rgb(57, 57, 57) 1px  10px 50px;
+        }
+        .myimg2 img{
+            width: 100%;
+            
+        }
+        
+        
         @media (min-width : 801px) {
-
+            
             #list li{
                 display: none;
-        
+                
                 
             }
         }
-
-            @media (max-width : 800px) {
-
-                nav ul {
+        
+        @media (max-width : 800px) {
+            
+            nav ul {
                     display: none;
                 }
 
@@ -186,36 +214,41 @@
                     <h3>Hello Code World,It's Me</h3>
                     <h1>Akash Patel</h1><br>
                     <h3>And I'm a Front-End Web-Devloper</h3><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum. Quibusdam error beatae sed molestias perferendis </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum. Quibusdam error beatae sed molestias perferendis </p><br>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                     
                 </div>
-                <div class="myimg">
-                    <img src="../../../myphoto.jpg" alt="">
-                    
-                </div>
+                    <div class="myimg">
+                        <img src="../../../myphoto.jpg" alt="">
+                        
+                    </div>
             </div>
         </div>
         
         
         
-    </header>
+    </header><br><br>
     
     <section>
-        <div class="">
+        <div class="section1">
     
-            <div class="">
-                <div class="">
-                    <h3>Hello Code World,It's Me</h3>
-                    <h1>Akash Patel</h1><br>
-                    <h3>And I'm a Front-End Web-Devloper</h3><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum. Quibusdam error beatae sed molestias perferendis </p>
-                    
-                </div>
-                <div class="">
-                    <img src=""alt="">
-                    
-                </div>
+            <div class="myimg2">
+                <img src="../../../myimg.jpg"alt="">
+                
             </div>
+          
+                <div class="aboutme">
+                    
+                    <h1>About Me</h1><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque modi beatae similique possimus dicta labore voluptatum, omnis numquam. Culpa earum enim magni blanditiis, officia veritatis molestias obcaecati assumenda labore.</p>
+                    
+                </div>
+         >
         </div>
         
     </section>
