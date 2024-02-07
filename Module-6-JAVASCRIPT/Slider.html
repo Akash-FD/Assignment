@@ -11,20 +11,22 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* border: 1px solid red; */
 
         }
 
         body {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             background-color: rgb(26, 26, 26);
         }
 
         .main {
-            width: 900px;
+            width: 1200px;
             height: auto;
             display: flex;
             overflow-x: scroll;
+            margin: 0 auto;
         }
 
         .main div {
@@ -35,17 +37,18 @@
             padding: 8px;
             flex: none;
         }
-
+        
         .main div img {
 
             width: 100%;
             aspect-ratio: 3/2;
             object-fit: fill;
-            filter: grayscale(100);
+            filter: grayscale(1);
             cursor: pointer;
             transition: transform 0.6s;
-
-
+            align-items: center;
+            
+            
         }
 
         .main::-webkit-scrollbar {
@@ -53,9 +56,12 @@
         }
 
         .header {
+            width: 90%;
             display: flex;
             align-items: center;
-            margin: 12% 15%;
+            margin: 150px auto;
+            /* margin: 0 auto; */
+            
         }
 
         .header h1 {
@@ -122,11 +128,11 @@
 
         nextbtn.addEventListener("click", () => {
             slider.style.scrollBehavior = "smooth";
-            slider.scrollLeft += 300;
+            slider.scrollLeft += 1200;
         });
 
         backbtn.addEventListener("click", () => {
-            slider.scrollLeft -= 300;
+            slider.scrollLeft -= 1200;
             slider.style.scrollBehavior = "smooth";
         });
 

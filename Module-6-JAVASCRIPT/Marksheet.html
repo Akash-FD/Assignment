@@ -11,18 +11,27 @@
             padding: 0%;
             box-sizing: border-box;
         }
+        body{
+            background-color: rgb(8, 8, 8);
+            color: aliceblue;
+        }
 
         .box {
             width: 600px;
             margin: 0 auto;
-            border: 2px solid black;
+            border: 2px solid rgb(255, 255, 255);
             padding: 30px;
             font-size: 20px;
+            height: 95vh;
+            margin-top: 10px;
 
         }
 
         input {
             float: right;
+            background-color: rgb(46, 46, 46);
+            color: aliceblue;
+            outline: 1px solid aliceblue;
         }
 
         button {
@@ -31,6 +40,7 @@
             color: aliceblue;
             font-size: 20px;
         }
+
 
         p {
             
@@ -59,17 +69,14 @@
 
             <p>TOTAL IS : <b id="total"></b> / 350</p><br>
 
-            <p>PERCENATGE IS : <b id="per"></b> %</p><br><br>
+           <span>PERCENATGE IS : <b id="per"></b> %</span>
 
-            <p id="Result"></p>
+            <span id="Result"></span>
 
         </div>
     </section>
 
     <script>
-
-
-
 
         function percentage() {
             let a = parseInt(document.getElementById("c").value)
@@ -79,24 +86,23 @@
             let e = parseInt(document.getElementById("css").value)
             let f = parseInt(document.getElementById("javascript").value)
             let g = parseInt(document.getElementById("java").value);
+            
 
             let sum = a + b + c + d + e + f + g;
-
-            // let sorry = document.write("Sorry! you are FAIL")
 
             if (sum <= 350 && sum >= 116 &&  a <= 50 && b <= 50 && c <= 50 && d <= 50 && e <= 50 && f <= 50 && g <= 50 && a >= 18 && b >= 18 && c >= 18 && d >= 18 && e >= 18 && f >= 18 && g >= 18) {
 
                 document.getElementById("total").innerText = sum
                 document.getElementById("per").innerText = sum * 100 / 350
-                let clr = document.getElementById("Result").innerText = "Congratulation.. You are PASS" 
-                // clr.style.color = 'green';
+                document.getElementById("Result").innerText = "Congratulation.. You are PASS" 
+                document.getElementById("Result").style.color = 'green';
                 
             } else if ( a < 18 || b < 18 || c < 18 || d < 18 || e < 18 || f < 18 || g < 18) {
                 
                 document.getElementById("total").innerText = sum
                 document.getElementById("per").innerText = sum * 100 / 350
                 document.getElementById("Result").innerText = "Sorry! you are FAIL"
-                // clr.style.color = 'red';
+                document.getElementById("Result").style.color = 'red';
 
             } else {
 
@@ -110,3 +116,5 @@
 </body>
 
 </html>
+
+
