@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,18 +15,22 @@
             box-sizing: border-box;
             /* border: 1px solid red; */
             list-style: none;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
 
         body {
-            background-color: rgb(150, 150, 150);
+            background-color: rgb(41, 41, 41);
+            /* background-color: rgb(150, 150, 150); */
         }
-        header{
-            background-color: rgb(29, 31, 39);
+
+        header {
+            background-color: rgb(19, 19, 19);
         }
-        
+
         #list {
-            
+
             /* border: 2px solid red; */
             list-style: none;
             max-width: 900px;
@@ -40,16 +43,16 @@
             text-align: center;
             display: none;
         }
-        
+
         nav {
             font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color: rgb(237, 78, 25);
+            background-color: rgb(0, 0, 0);
         }
-        
+
         nav ul {
             display: flex;
             width: 700px;
@@ -59,125 +62,210 @@
             font-size: 25px;
 
             justify-content: right;
-            
+
         }
 
-        
-        
+
+
         nav ul li {
             margin: 15px;
             display: flex;
         }
-        
+
 
         nav h1 {
-          font-size: 25px;
-          color: aliceblue; 
-          font-family: Arial, Helvetica, sans-serif;   
+            font-size: 25px;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #bar {
             color: aliceblue;
             display: none;
         }
-        
+
         li:hover {
             color: red;
         }
-        .main-text{
+
+        .main-text {
             display: flex;
             justify-content: space-around;
             /* margin-top: 100px; */
             color: rgb(255, 255, 255);
             padding: 50px;
         }
-        
-        .intro{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        .intro {
             font-size: 25px;
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        .myimg{
+
+        .myimg {
             width: 30%;
-            height: 500px;
-            border-radius: 60%;
+            /* height: 500px; */
+            border-radius: 50%;
             overflow: hidden;
             background-color: rgb(237, 78, 25);
-            box-shadow:rgb(237, 78, 25) 1px  10px 10px;
+            box-shadow: rgb(237, 78, 25) 1px 10px 10px;
             transition: transform 0.5s;
-            
+
         }
-        
-        .myimg img{
+
+        .myimg img {
             width: 100%;
             height: 100%;
         }
 
-        .myimg:hover{
+        .myimg:hover {
             /* outline: 2px solid orangered; */
-            box-shadow:rgb(14, 22, 63) 1px  10px 50px;
+            box-shadow: rgb(14, 22, 63) 1px 10px 50px;
             transform: scale(1.05);
-            
-            
+
+
         }
-        .social a{
+
+        .social a {
             margin-inline: 10px;
             color: aliceblue;
         }
-        .section1{
+
+        .section1 {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 90%;
             margin: 0 auto;
         }
-        .aboutme{
+
+        .aboutme {
             width: 50%;
             font-size: 25px;
         }
-        .myimg2{
+
+        .myimg2 {
             width: 30%;
             height: 100%;
             overflow: hidden;
-            box-shadow:rgb(57, 57, 57) 1px  10px 50px;
+            box-shadow: rgb(57, 57, 57) 1px 10px 50px;
         }
-        .myimg2 img{
+
+        .myimg2 img {
             width: 100%;
-            
+
         }
-        
-        
+
+        .section2 h1 {
+            text-align: center;
+        }
+
+        .section2 {
+            background-color: rgb(19, 19, 19);
+
+        }
+
+        .wrap-skill {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .main {
+            width: 1200px;
+            height: auto;
+            display: flex;
+            overflow-x: scroll;
+            margin: 0 auto;
+        }
+
+        .main div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 8px;
+            flex: none;
+        }
+
+        .main div img {
+
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: fill;
+            filter: grayscale(1);
+            cursor: pointer;
+            transition: transform 0.6s;
+            align-items: center;
+
+
+        }
+
+        .main::-webkit-scrollbar {
+            display: none;
+        }
+
+        .header {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            margin: 150px auto;
+            /* margin: 0 auto; */
+
+        }
+
+        .header h1 {
+            font-size: 80px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 42, 0);
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 100%;
+        }
+
+
+
+        .main div img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.2);
+            z-index: 2;
+
+
+
+        }
+
+
         @media (min-width : 801px) {
-            
-            #list li{
+
+            #list li {
                 display: none;
-                
-                
+
+
             }
         }
-        
+
         @media (max-width : 800px) {
-            
+
             nav ul {
-                    display: none;
-                }
+                display: none;
+            }
 
-                nav {
+            nav {
 
-                    justify-content: space-between;
-                    padding: 40px;
-
-                }
-
-                #bar {
-                    display: block;
-
-                }
+                justify-content: space-between;
+                padding: 40px;
 
             }
+
+            #bar {
+                display: block;
+
+            }
+
+        }
     </style>
 </head>
 
@@ -211,61 +299,147 @@
 
             <div class="main-text">
                 <div class="intro">
-                    <h3>Hello Code World,It's Me</h3>
+                    <h3>Hello Codeing World,It's Me</h3>
                     <h1>Akash Patel</h1><br>
                     <h3>And I'm a Front-End Web-Devloper</h3><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum. Quibusdam error beatae sed molestias perferendis </p><br>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum. Quibusdam error beatae sed molestias perferendis </p><br> -->
                     <div class="social">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-github"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    
+
                 </div>
-                    <div class="myimg">
-                        <img src="../../../myphoto.jpg" alt="">
-                        
-                    </div>
+                <div class="myimg">
+                    <img src="../../../myphoto.jpg" alt="">
+
+                </div>
             </div>
         </div>
-        
-        
-        
+
+
+
     </header><br><br>
-    
+
     <section>
         <div class="section1">
-    
+
             <div class="myimg2">
-                <img src="../../../myimg.jpg"alt="">
-                
+                <img src="../../../myimg.jpg" alt="">
+
             </div>
-          
-                <div class="aboutme">
-                    
-                    <h1>About Me</h1><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque modi beatae similique possimus dicta labore voluptatum, omnis numquam. Culpa earum enim magni blanditiis, officia veritatis molestias obcaecati assumenda labore.</p>
-                    
-                </div>
-         >
+
+            <div class="aboutme">
+
+                <h1>About Me</h1><br>
+                <p>Hello My Name Is Akash Patel And I Am From Botad,Gujrat. I Have Completed My Graduation In Civil
+                    Engennering Degree From Goverment Engennering College OF Bhavnagar.I Am Currently Persuing Front-End
+                    Web Devlopment From Tops Tecnologys </p>
+
+            </div>
+
         </div>
-        
+
     </section>
+    <section>
+        <div class="section2">
+
+            <h1>My Skill</h1>
+
+            <div class="wrap-skill">
+
+
+                <div class="skill">
+                    <img src="" alt="">
+                    <h2>HTML</h2>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <h2>CSS</h2>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <h2>JAVASCRIPT</h2>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <h2>JQuery</h2>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <h2>BOOSTRAP</h2>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <div class="header">
+        <h1 id="backbtn">
+            <</h1>
+
+                <div class="main">
+                    <div class="gallary">
+
+                        <a href="../Module-6-JAVASCRIPT/Slider.html"><img src="../Module-6-JAVASCRIPT/img/ensepsen (1).jpg" alt=""></a>
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
+                    </div>
+
+                    <div class="gallary">
+
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen(5).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (1).jpg" alt="">
+
+                    </div>
+                    <div class="gallary">
+
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
+                        <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
+
+                    </div>
+                </div>
+                <h1 id="nextbtn">></h1>
+
+    </div>
 </body>
 
 <script src="../../JQurey/JQ/JQuery.js"></script>
 <script>
 
-$(document).ready(function () {
 
-    $("#bar").click(function () {
 
-        $("#list").slideToggle()
-        $("#list").css('display', 'inlineBlock')
+    let slider = document.querySelector(".main");
+    let backbtn = document.querySelector("#backbtn");
+    let nextbtn = document.querySelector("#nextbtn");
 
-    })
 
-})</script>
+    nextbtn.addEventListener("click", () => {
+        slider.style.scrollBehavior = "smooth";
+        slider.scrollLeft += 1200;
+    });
+
+    backbtn.addEventListener("click", () => {
+        slider.scrollLeft -= 1200;
+        slider.style.scrollBehavior = "smooth";
+    });
+
+
+    $(document).ready(function () {
+
+        $("#bar").click(function () {
+
+            $("#list").slideToggle()
+            $("#list").css('display', 'inlineBlock')
+
+        })
+
+    })</script>
 
 </html>
