@@ -7,7 +7,7 @@ export default function TodoList() {
 
   // const records 
   
-  const handelList = (index)=>{
+  const handelList = ()=>{
     // setGrocery([input])
     setGrocery([...grocery,input])
     console.log(grocery);
@@ -17,7 +17,7 @@ export default function TodoList() {
 
   const handelDel = (index) =>{
     const updatedGrocery = [...grocery];
-    updatedGrocery.splice(index, 1);
+    updatedGrocery.splice(index,1);
     // delete updatedGrocery[index]
     console.log(updatedGrocery);
     setGrocery(updatedGrocery);
