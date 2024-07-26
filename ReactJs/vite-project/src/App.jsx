@@ -7,6 +7,7 @@ import Counter from './Counter/Counter'
 import LoginPage from './Login.jsx/LoginPage'
 import TodoList from './TodoList/TodoList'
 import Map_list from './MapList/Map_list'
+import MovingDiv from './MovingDiv/MovingDiv'
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
    <Counter/><br/><br/>
     <LoginPage/><br /><br />
     <TodoList/><br /> */}
-    <Map_list/>
+    {/* <Map_list/> */}
+    <MovingDiv/>
   
     </>
   )

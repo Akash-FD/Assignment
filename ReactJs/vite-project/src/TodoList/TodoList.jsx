@@ -19,8 +19,8 @@ export default function TodoList() {
     const updatedGrocery = [...grocery];
     updatedGrocery.splice(index,1);
     // delete updatedGrocery[index]
-    console.log(updatedGrocery);
     setGrocery(updatedGrocery);
+    console.log(updatedGrocery);
     // console.log(updatedGrocery);
 
   }

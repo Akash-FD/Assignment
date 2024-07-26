@@ -6,6 +6,8 @@ export default function Map_list() {
     const[input,setInput] = useState("")
 
 
+
+
 const handelList = (index)=>{
     setList([...list,input])
     setInput("")
