@@ -8,6 +8,7 @@ import LoginPage from './Login.jsx/LoginPage'
 import TodoList from './TodoList/TodoList'
 import Map_list from './MapList/Map_list'
 import MovingDiv from './MovingDiv/MovingDiv'
+import Style from './Styling/Style'
 
 function App() {
   
@@ -16,10 +17,11 @@ function App() {
     <>
     {/* <HelloReact/>
    <Counter/><br/><br/>
-    <LoginPage/><br /><br />
-    <TodoList/><br /> */}
+    <LoginPage/><br /><br /> */}
+    {/* <TodoList/><br /> */}
     {/* <Map_list/> */}
-    <MovingDiv/>
+    {/* <MovingDiv/> */}
+    <Style/>
   
     </>
   )
