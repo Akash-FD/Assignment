@@ -1,6 +1,7 @@
-// import Styling from "./Styling"
+import Styling from "./Styling"
+// import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
-import ApiCrud from "./assets/Fake-Api/ApiCrud"
+// import ApiCrud from "./Fake-Api/ApiCrud"
 
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
 
   return (
     <>
-    {/* <Styling/> */}
-    <ApiCrud/>
+    <Styling/>
+    {/* <ApiCrud/> */}
     </>
   )
 }

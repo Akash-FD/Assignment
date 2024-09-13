@@ -33,22 +33,22 @@
             width: 100%;
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-gap: 10px;
-            padding: 8px;
+            grid-gap: 20px;
+            padding: 8px; 
             flex: none;
         }
-        
+
         .main div img {
 
             width: 100%;
             aspect-ratio: 3/2;
             object-fit: fill;
-            filter: grayscale(1);
+            filter: grayscale(0.5);
             cursor: pointer;
             transition: transform 0.6s;
             align-items: center;
-            
-            
+
+
         }
 
         .main::-webkit-scrollbar {
@@ -61,7 +61,7 @@
             align-items: center;
             margin: 150px auto;
             /* margin: 0 auto; */
-            
+
         }
 
         .header h1 {
@@ -73,7 +73,7 @@
             border-radius: 100%;
         }
 
-        
+
 
         .main div img:hover {
             filter: grayscale(0);
@@ -89,8 +89,7 @@
 
 <body>
     <div class="header">
-        <h1 id="backbtn">
-            <</h1>
+        <h1 id="backbtn"><</h1>
 
                 <div class="main">
                     <div class="gallary">
@@ -99,23 +98,24 @@
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
                     </div>
-                        
+
                     <div class="gallary">
-                        
+
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen(5).jpg" alt="">
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (1).jpg" alt="">
-                        
+
                     </div>
                     <div class="gallary">
-                        
+
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (2).jpg" alt="">
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (3).jpg" alt="">
                         <img src="../Module-6-JAVASCRIPT/img/ensepsen (4).jpg" alt="">
-                      
+
                     </div>
                 </div>
-                <h1 id="nextbtn">></h1>
+               
+             <h1 id="nextbtn">></h1>
 
     </div>
 
@@ -128,11 +128,11 @@
 
         nextbtn.addEventListener("click", () => {
             slider.style.scrollBehavior = "smooth";
-            slider.scrollLeft += 400;
+            slider.scrollLeft += 1200;
         });
 
         backbtn.addEventListener("click", () => {
-            slider.scrollLeft -= 400;
+            slider.scrollLeft -= 1200;
             slider.style.scrollBehavior = "smooth";
         });
 
