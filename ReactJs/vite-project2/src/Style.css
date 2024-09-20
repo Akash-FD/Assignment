@@ -70,7 +70,7 @@
 /* Second nav start here */
 
 .second-nav{
-   padding: 20px 0px;
+   padding: 10px 0px;
     border: 1px solid rgb(228, 227, 227);
     display: flex;
     align-items: center;
@@ -169,7 +169,7 @@
     display: flex;
     display: none;
     justify-content: space-around;
-    top: 50px;
+    top: 55px;
     right: -470px;
     border-radius: 10px;
     width: 1240px;
