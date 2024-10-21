@@ -26,7 +26,7 @@ export default function AddUser() {
             alert("data has alrady exist")
             return;
         }        
-        const jsonData = { name, email }
+        const jsonData = {name,email}
 
         fetch('http://localhost:5000/students', {
             method: "post",

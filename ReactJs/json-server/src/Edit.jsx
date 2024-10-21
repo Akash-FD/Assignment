@@ -22,7 +22,7 @@ export default function Edit() {
     
 
     const handleSubmit =(e)=>{
-        e.preventDefault();
+        e.preventDefault()
 
         if(name==="" || email===""){
             alert("All fild Are Mendatory")

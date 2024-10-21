@@ -15,14 +15,14 @@ export default function View() {
         setEmail(data.email)})
     })
     console.log(viewId);
+    return (
+      <div>
+        <h2>Id : {viewId}</h2>
+        <h2>name: {name}</h2>
+        <h2>email : {email}</h2>
+      </div>
+    )
+  }
     
     
     
-  return (
-    <div>
-      <h2>Id : {viewId}</h2>
-      <h2>name: {name}</h2>
-      <h2>email : {email}</h2>
-    </div>
-  )
-}

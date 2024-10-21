@@ -23,13 +23,18 @@ const handelDelete = (id)=>{
         headers:{"content-type":"application/json"}
     })
 }
-const handelDeleteAll = ()=>{
-    fetch("http://localhost:5000/students",{
+
+
+const handelDeleteAll =()=>{
+    fetch(`http://localhost:5000/students`,{
         method:"DELETE",
         headers:{"content-type":"application/json"}
     })
- 
+    
 }
+ 
+
+
 
 // console.log(student);
 
@@ -54,9 +59,8 @@ const handelDeleteAll = ()=>{
                                         <th scope='col'>#</th>
                                         <th scope='col'>Name</th>
                                         <th scope='col'>email</th>
-                                        <th scope='col'>Action</th>
-                                        <th scope='col'>Action</th>
-                                        <th scope='col'>Action</th>
+                                        <th scope='col' colSpan={3}>Action</th>
+                   
                                     </tr>
                                 </thead>
                                 <tbody>

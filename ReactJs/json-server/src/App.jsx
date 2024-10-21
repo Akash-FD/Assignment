@@ -3,9 +3,16 @@ import Home from "./Home"
 import AddUser from "./AddUser"
 import 'bootstrap/dist/css/bootstrap.css'
 import View from "./View"
-import Edit from "./Edit"
+import Edit from "./Edit" 
 
 function App() {
+
+  // npm i bootstrap 
+  // npm i react-router-dom
+  // npm i -g json-server
+  // manually create db.json file
+  // json-server --watch db.json --port 5001
+  
 
 
   return (
