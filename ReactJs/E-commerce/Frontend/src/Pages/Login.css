@@ -1,0 +1,64 @@
+.main-login{
+    width: 100%;
+    background:linear-gradient(180deg,rgb(238, 200, 255),rgb(255, 255, 255));
+    padding-top:80px ;
+    padding-bottom:120px ;
+}
+.loginesignup{
+    width: 500px;
+    border: 1px solid grey;
+   background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0px;
+    padding-left: 50px;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+}
+.loginesignup h1{
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+    
+   
+/* .login-input{
+    
+   
+} */
+.login-input input{
+    width: 90%;
+    font-size: 15px;
+    padding: 13px 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(202, 202, 202);
+}
+.login-input button{
+     width: 90%;
+    font-size: 15px;
+    padding: 13px 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    background-color: red;
+    color: white;
+    border: none;
+   font-size: 20px;
+}
+.login-input a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.checkbox{
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+    
+
+   
