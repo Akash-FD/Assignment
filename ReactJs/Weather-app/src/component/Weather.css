@@ -1,6 +1,6 @@
 
 .weather{
-    width: 420px;
+    width: 400px;
     background: linear-gradient(45deg,rgb(57, 27, 153),rgb(81, 0, 186));
     border: 1px solid black;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     gap: 15px;
 }
 .search input{
-    width: 270px;
+    width: 250px;
     padding: 10px;
     padding-left: 20px;
     border-radius: 20px;
@@ -38,7 +38,7 @@
     width: 150px;
 }
 .temp p{
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
     color: white;
    
@@ -46,7 +46,7 @@
 .details{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
     font-size: 15px;
     color: rgb(179, 179, 179);
     margin-top: 30px;
