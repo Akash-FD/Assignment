@@ -12,7 +12,7 @@ export default function Product() {
    
   return (
     <div>
-    <ProductDetails/>
+    <ProductDetails />
       
     </div>
   )

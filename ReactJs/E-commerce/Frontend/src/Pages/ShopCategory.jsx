@@ -6,7 +6,7 @@ import dropdown_icon from '../Component/assets/dropdown_icon.png'
 import Item from '../Component/item/Item'
 
 export default function ShopCategory(props) {
-
+  
 const products = useContext(context)
 
 return (

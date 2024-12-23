@@ -4,6 +4,7 @@ import hero_image from '../assets/hero_image.png'
 
 export default function Hero() {
   return (
+
     <div className="main-hero">
 
       <div className='hero'>
