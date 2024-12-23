@@ -2,6 +2,5 @@ body{
   
     display: grid;
     place-items: center;
-    background: #212121;
     height: 100vh;
 }
