@@ -7,14 +7,14 @@ export default function Cart() {
 
   let total = 0;
   return (
-    <div className='flex justify-evenly items-start mt-10'>
-      <div className='w-[45%]'>
+    <div className='flex justify-around items-center mt-10 max-md:flex max-md:flex-col'>
+      <div className='w-[50%] max-md:w-[100%]'>
         {cart.map((item) => {
           return <div key={item.id}>
 
-            <div className='flex items-center border p-2 bg-slate-50 gap-6 mb-5'>
+            <div className='flex items-center border p-2 bg-slate-50 gap-6 mb-5 max-md:flex-col max-md:text-center'>
               <img src={item.image} alt="" className='w-[100px] h-[75px] object-contain' />
-              <div className='flex flex-col gap-4 w-[40%] overflow-hidden'>
+              <div className='flex flex-col gap-4 w-[80%] overflow-hidden'>
                 <p className='font-bold'>{item.name}</p>
                 <p>${item.price}</p>
                 <p>{item.smallDescription}</p>
@@ -28,7 +28,7 @@ export default function Cart() {
 
     </div>
         
-        <div className="billing">
+        <div className="billing m-auto">
                 <div>
                   <h2 className='text-2xl font-bold'>Total Amount</h2>
                 </div>
@@ -39,7 +39,7 @@ export default function Cart() {
                     
                   })}
 
-                  <p className='text-2xl text-center'>{total.toFixed(2)}</p>
+                  <p className='text-2xl text-center'>${total.toFixed(2)}</p>
 
                 </div>
 

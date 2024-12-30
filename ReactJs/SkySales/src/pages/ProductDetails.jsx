@@ -18,14 +18,14 @@ export default function ProductDetails() {
   return (
     <div className='main-productDetails'>
 
-      <div className='w-[80%] flex justify-around bg-slate-50 m-auto border p-4 hover:shadow-2xl cursor-pointer mt-4 py-20'>
+      <div className='w-[80%] flex gap-6 justify-around bg-slate-50 m-auto border p-4 hover:shadow-2xl cursor-pointer mt-4 py-20 max-sm:flex max-sm:flex-col max-sm:py-10 max-sm:text-center'>
 
         <img src={productDetails.image} alt="" className='w-[400px] h-[300px] object-contain max-md:w-[300px]' />
         <div className='flex flex-col gap-10'>
-          <p className='text-start font-bold text-2xl'>{productDetails.name}</p>
-          <p className='text-start text-2xl'>${productDetails.price}</p>
+          <p className='font-bold text-2xl'>{productDetails.name}</p>
+          <p className='text-2xl'>${productDetails.price}</p>
           <p className='text-lg text-gray-400'>{productDetails.smallDescription}</p>
-          <button className='w-full bg-blue-600 text-white p-2'  onClick={()=>{setCart([...cart,productDetails])}}>+Add to cart</button>
+          <button className='w-[30vw] bg-blue-600 text-white p-2 max-sm:m-auto'  onClick={()=>{setCart([...cart,productDetails])}}>+Add to cart</button>
         </div>
       </div>
       <div className='w-[80%] m-auto mt-3 bg-slate-50 p-3 flex flex-wrap items-center gap-6 '>
