@@ -1,0 +1,46 @@
+Step 1: Check for Existing SSH Keys
+Before generating a new SSH key, check if you already have one:
+ls -al ~/.ssh
+If you see files like id_rsa.pub or id_ed25519.pub, you already have an SSH key.
+
+
+
+Step 2: Generate a New SSH Key (If Not Exists)
+If you don't have an SSH key, generate one using:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+Replace "your_email@example.com" with your GitHub email.
+Press Enter to save it in the default location (~/.ssh/id_ed25519).
+If prompted for a passphrase, you can leave it empty or set one for extra security.
+
+
+Step 3: Add SSH Key to SSH Agent
+Start the SSH agent:
+eval "$(ssh-agent -s)"
+Then add your key to the SSH agent:
+ssh-add ~/.ssh/id_ed25519
+
+
+Step 4: Copy SSH Key
+Copy your public SSH key to add it to GitHub:
+cat ~/.ssh/id_ed25519.pub
+Copy the output (it starts with ssh-ed25519).
+
+
+Step 5: Add SSH Key to GitHub
+Go to GitHub → Settings → SSH and GPG keys.
+Click "New SSH Key".
+Paste the copied SSH key in the "Key" field.
+Click "Add SSH Key".
+
+
+Step 6: Test the SSH Connection
+Run the following command to check if it's working:
+ssh -T git@github.com
+Hi <your-github-username>! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+Step 7: Use SSH for Git Operations
+Now, you can clone repositories using SSH instead of HTTPS:
+git clone git@github.com:your-username/your-repository.git
+From now on, when pushing or pulling, GitHub will use SSH authentication automatically.
+
