@@ -1,0 +1,52 @@
+# git 
+  -git is a version control system that help to track change in a code  
+  - free open source
+
+
+# Github
+  -github is a website that allows developers to manage their code using git
+
+
+# git configuring
+  -why beacuse we have to tell the git which github account we want to track and change  
+  git config --global user.name "Akash-FD"
+  git config --global user.email "myemail"
+  git config --list
+
+
+# git clone and status
+  -to clone our github repo to in our local system
+
+
+# git add 
+  -to add any chage 
+  git add . --> all change to be added   
+
+----------NOTE ------ when we add any change wo stage me chali jati hai 
+
+
+# git commit -- to record of our change (screenshote)
+ - git commit -m "update file"
+
+
+# push --to uplod change local to github
+ - git push origin main
+
+
+## how to initialise a git repo from local
+------NOTE---  ls -a   to see hidden file after git init
+
+git init 
+               . .. .git
+
+git remote origin <link>      
+git remote -v
+git branch -M main    to change branch name  
+git push -u origin main --> -u beacuse next time we only write git push 
+
+
+### Cherry pick 
+   - commit ko aek branch se dusri branch per move karva mate
+   -- spesific commit mate 
+   -- git cherr-pick #id
+   -- and all commit mate --> git merge dev

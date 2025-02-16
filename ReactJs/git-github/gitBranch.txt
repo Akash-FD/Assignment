@@ -1,0 +1,31 @@
+# Git Branches
+
+ git branch                --> to check all existing branch 
+ git branch -M naib        --> to rename branch 
+ git checkout branch       --> to navigate one to another
+ git checkout -b branch    --> to create and navigate that branch 
+ git branch -d branch      --> to delete branch
+ 
+ git push origin feature1
+
+
+ ---# Merging code
+
+  git diff main --> to see the diffrence 
+
+ 1. git merge main 
+ 2. pull request 
+
+ ## pull command --> to fetch and download content from githun to local 
+   - git pull origin main
+
+
+
+
+## resolving merge conflict  --> manually resolve
+
+
+undoing Changes 
+git reset --> undo karva mate
+git reser HEAD~1 --> 1 step undo
+git reset --hard  --> whole undo

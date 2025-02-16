@@ -1,0 +1,10 @@
+# pwd
+ -to see corrent working directory
+
+#cd 
+ -to change the derectory 
+   cd new.html 
+   cd ..           ----> to back 
+
+# ls               --> to list all files 
+# status          ---> to chacke the stats like any update or not    
